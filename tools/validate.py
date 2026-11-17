@@ -17,6 +17,7 @@ def main():
     spec.loader.exec_module(icons)
     expected_icons = {PLUGIN / 'assets/icons' / (name + '.png'): icons.icon(i) for i, name in enumerate(icons.ICONS)}
     expected_icons[ROOT / 'profile/ai-usage-kit.ulanziProfile/AI Usage Kit.png'] = icons.icon(0)
+    documentation_images = json.loads((ROOT / 'tests/documentation-images.json').read_text())
     vendor_hashes = json.loads((ROOT / 'tests/ws-sha256.json').read_text())
     secret_patterns = [
         r'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----',
@@ -33,6 +34,10 @@ def main():
         assert not file.is_symlink(), f'Symlink: {file.relative_to(ROOT)}'
         if not file.is_file(): continue
         count += 1
+        relative = file.relative_to(ROOT).as_posix()
+        if relative in documentation_images:
+            assert hashlib.sha256(file.read_bytes()).hexdigest() == documentation_images[relative], f'Unreviewed documentation image: {file}'
+            continue
         if file.suffix == '.png':
             assert file in expected_icons and file.read_bytes() == expected_icons[file], f'Unreviewed image: {file}'
             continue
@@ -48,6 +53,7 @@ def main():
         if file.suffix == '.html':
             for ref in re.findall(r'(?:src|href)="([^"]+)"', text):
                 assert '://' not in ref and (file.parent / ref).is_file(), f'Bad inspector reference: {ref}'
+    assert {f.relative_to(ROOT).as_posix() for f in (ROOT / 'docs/images').rglob('*') if f.is_file()} == set(documentation_images)
     ws = PLUGIN / 'node_modules/ws'
     assert {str(f.relative_to(ws)) for f in ws.rglob('*') if f.is_file()} == set(vendor_hashes)
     for name, digest in vendor_hashes.items():

@@ -10,6 +10,15 @@ Related project: Keith's [AI Usage / AttentionLedger](https://github.com/krumjah
 That activity tracker is an optional, separate dependency; this repository does
 not install it or change it.
 
+## A look at the setup
+
+![Ulanzi Studio displaying AI quotas, activity time, and optional metrics on a customized D200 profile](docs/images/ulanzi-studio-ai-usage.png)
+
+Keith's customized profile in Ulanzi Studio. Values are a snapshot, not live data.
+This screenshot includes optional integrations and separate YouTube/system-stat
+buttons that are not bundled with this kit. The public starter profile is smaller;
+see the dependencies below before adding more actions.
+
 ## What is included
 
 - A JavaScript plugin with editable source in `plugin/.../dist/` (no build step).

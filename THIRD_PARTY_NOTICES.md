@@ -30,3 +30,13 @@ provenance was not established. Replacement icons are reproducible from
 The separate YouTube statistics plugin, Ulanzi Studio, OpenUsage, AttentionLedger,
 and service-provider applications are not distributed here. Obtain and use
 those separately under their own terms.
+
+## Documentation images
+
+Images in `docs/images/` were supplied by Keith for publication as documentation
+of his setup. They are not reusable plugin icon assets. Third-party interfaces,
+service marks, and logos visible in them remain the property of their respective
+owners; publication does not imply endorsement or grant rights to those marks.
+The original Library uploads are preserved. Published images are checked for
+private metadata, and their reviewed bytes are recorded in
+`tests/documentation-images.json`.
