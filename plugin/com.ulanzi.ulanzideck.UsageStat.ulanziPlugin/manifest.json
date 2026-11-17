@@ -1,0 +1,246 @@
+{
+  "Version": "1.4.1",
+  "Author": "Keith",
+  "Name": "AI Usage",
+  "UUID": "com.ulanzi.ulanzideck.UsageStat",
+  "Description": "Experimental AI usage and optional metrics for Ulanzi Studio on macOS and Ulanzi D200.",
+  "Icon": "assets/icons/ai_usage_logo.png",
+  "Category": "AI Usage",
+  "CategoryIcon": "assets/icons/category.png",
+  "CodePath": "dist/app.js",
+  "Type": "JavaScript",
+  "PrivateAPI": true,
+  "Actions": [
+    {
+      "Name": "Claude Usage",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.claude",
+      "Tooltip": "Claude tokens remaining",
+      "Icon": "assets/icons/claude.png",
+      "PropertyInspectorPath": "property-inspector/claude/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "claude",
+          "Image": "assets/icons/claude.png"
+        }
+      ]
+    },
+    {
+      "Name": "Codex Usage",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.openai",
+      "Tooltip": "Codex quota reported by OpenUsage",
+      "Icon": "assets/icons/openai.png",
+      "PropertyInspectorPath": "property-inspector/openai/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "openai",
+          "Image": "assets/icons/openai.png"
+        }
+      ]
+    },
+    {
+      "Name": "Cursor Usage",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.cursor",
+      "Tooltip": "Cursor usage remaining",
+      "Icon": "assets/icons/cursor.png",
+      "PropertyInspectorPath": "property-inspector/cursor/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "cursor",
+          "Image": "assets/icons/cursor.png"
+        }
+      ]
+    },
+    {
+      "Name": "GrokBot Usage",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.grokbot",
+      "Tooltip": "Grok Bot usage remaining",
+      "Icon": "assets/icons/grokbot.png",
+      "PropertyInspectorPath": "property-inspector/grokbot/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "grokbot",
+          "Image": "assets/icons/grokbot.png"
+        }
+      ]
+    },
+    {
+      "Name": "AI Attention",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.attention",
+      "Tooltip": "Time spent with AI, from the AI Usage tracker",
+      "Icon": "assets/icons/attention.png",
+      "PropertyInspectorPath": "property-inspector/attention/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "attention",
+          "Image": "assets/icons/attention.png"
+        }
+      ]
+    },
+    {
+      "Name": "Disk Space",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.disk",
+      "Tooltip": "Free space on your home volume",
+      "Icon": "assets/icons/disk.png",
+      "PropertyInspectorPath": "property-inspector/disk/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "disk",
+          "Image": "assets/icons/disk.png"
+        }
+      ]
+    },
+    {
+      "Name": "MiniMax Usage",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.minimax",
+      "Tooltip": "MiniMax coding plan remaining",
+      "Icon": "assets/icons/openai.png",
+      "state": 0,
+      "States": [
+        {
+          "Name": "minimax",
+          "Image": "assets/icons/openai.png"
+        }
+      ]
+    },
+    {
+      "Name": "Gemini Usage",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.gemini",
+      "Tooltip": "Gemini quota remaining",
+      "Icon": "assets/icons/ai_usage_logo.png",
+      "state": 0,
+      "States": [
+        {
+          "Name": "gemini",
+          "Image": "assets/icons/ai_usage_logo.png"
+        }
+      ]
+    },
+    {
+      "Name": "Skool Community",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.skool",
+      "Tooltip": "Members in your Skool community",
+      "Icon": "assets/icons/skool.png",
+      "PropertyInspectorPath": "property-inspector/skool/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "skool",
+          "Image": "assets/icons/skool.png"
+        }
+      ]
+    },
+    {
+      "Name": "Stripe Income",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.stripe",
+      "Tooltip": "Stripe income, balance and active subscriptions",
+      "Icon": "assets/icons/stripe.png",
+      "PropertyInspectorPath": "property-inspector/stripe/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "stripe",
+          "Image": "assets/icons/stripe.png"
+        }
+      ]
+    },
+    {
+      "Name": "RevenueCat Subscribers",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.revenuecat",
+      "Tooltip": "RevenueCat subscribers and MRR",
+      "Icon": "assets/icons/revenuecat.png",
+      "PropertyInspectorPath": "property-inspector/revenuecat/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "revenuecat",
+          "Image": "assets/icons/revenuecat.png"
+        }
+      ]
+    },
+    {
+      "Name": "Ethereum Price",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.eth",
+      "Tooltip": "Ethereum price in USD",
+      "Icon": "assets/icons/eth.png",
+      "PropertyInspectorPath": "property-inspector/eth/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "eth",
+          "Image": "assets/icons/eth.png"
+        }
+      ]
+    },
+    {
+      "Name": "Google Analytics",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.ga",
+      "Tooltip": "Google Analytics 4 traffic stats",
+      "Icon": "assets/icons/ga.png",
+      "PropertyInspectorPath": "property-inspector/ga/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "ga",
+          "Image": "assets/icons/ga.png"
+        }
+      ]
+    },
+    {
+      "Name": "Social Followers",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.social",
+      "Tooltip": "Threads or Instagram follower count",
+      "Icon": "assets/icons/social.png",
+      "PropertyInspectorPath": "property-inspector/social/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "social",
+          "Image": "assets/icons/social.png"
+        }
+      ]
+    },
+    {
+      "Name": "Grok Bot IT",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.grokit",
+      "Tooltip": "Ask Grok Bot's IT agent to free up space",
+      "Icon": "assets/icons/grokit.png",
+      "PropertyInspectorPath": "property-inspector/grokit/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "grokit",
+          "Image": "assets/icons/grokit.png"
+        }
+      ]
+    },
+    {
+      "Name": "Next Meeting",
+      "UUID": "com.ulanzi.ulanzideck.UsageStat.calendar",
+      "Tooltip": "Shows your next calendar event; opens an app when pressed",
+      "Icon": "assets/icons/calendar.png",
+      "PropertyInspectorPath": "property-inspector/calendar/inspector.html",
+      "state": 0,
+      "States": [
+        {
+          "Name": "calendar",
+          "Image": "assets/icons/calendar.png"
+        }
+      ]
+    }
+  ],
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "13.0"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "6.1"
+  }
+}

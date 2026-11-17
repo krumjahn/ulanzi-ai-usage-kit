@@ -1,0 +1,19 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+*.log
+*.sqlite*
+*.db
+stats.json
+*service-account*.json
+client_secret*.json
+oauth_creds.json
+*.pem
+*.key
+*.app/
+*.zip
+# Only the reviewed vendored ws dependency belongs in source control.
+node_modules/*
+!node_modules/ws/

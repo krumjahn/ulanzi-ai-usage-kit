@@ -1,0 +1,15 @@
+{
+  "Device": {
+    "Model": "D200",
+    "UUID": ""
+  },
+  "Icon": "AI Usage Kit.png",
+  "Name": "AI Usage Kit (experimental)",
+  "Pages": {
+    "Current": "22222222-2222-4222-8222-222222222222",
+    "Pages": [
+      "22222222-2222-4222-8222-222222222222"
+    ]
+  },
+  "Version": "2.0"
+}

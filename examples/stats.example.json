@@ -1,0 +1,30 @@
+{
+  "_comment": "Configure only needed sections with tools/setup-keys.sh. Plaintext local storage, mode 0600; not encryption.",
+  "stripe": {
+    "secretKey": ""
+  },
+  "revenuecat": {
+    "secretKey": "",
+    "projectId": ""
+  },
+  "ga": {
+    "propertyId": "",
+    "serviceAccountFile": ""
+  },
+  "social": {
+    "platform": "threads",
+    "handle": "",
+    "token": "",
+    "userId": ""
+  },
+  "minimax": {
+    "apiKey": ""
+  },
+  "gemini": {
+    "clientId": "",
+    "clientSecret": ""
+  },
+  "calendar": {
+    "source": "mac"
+  }
+}

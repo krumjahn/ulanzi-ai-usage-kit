@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Disk space</title>
+  <link rel="stylesheet" href="../inspector.css">
+</head>
+
+<body>
+
+  <div class="udpi-wrapper hidden">
+    <form id="property-inspector">
+      <div type="select" class="udpi-item">
+        <div class="udpi-item-label" data-localize>Display</div>
+        <select class="udpi-item-value select" id="Display" name="Display">
+          <option value="free" data-localize selected>Free space</option>
+          <option value="used" data-localize>Used %</option>
+          <option value="freepercent" data-localize>Free %</option>
+        </select>
+      </div>
+
+      <div class="udpi-item" id="source_note">
+        <div class="udpi-item-label" data-localize>Source</div>
+        <div class="udpi-item-value">Volume holding your home folder</div>
+      </div>
+
+      <div class="udpi-item" id="alert_note">
+        <div class="udpi-item-label" data-localize>Alert colour</div>
+        <div class="udpi-item-value">Amber under 30 GB free, red under 10 GB</div>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="../inspector.js"></script>
+</body>
+</html>

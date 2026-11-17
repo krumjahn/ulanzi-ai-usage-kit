@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Stripe income</title>
+  <link rel="stylesheet" href="../inspector.css">
+</head>
+
+<body>
+
+  <div class="udpi-wrapper hidden">
+    <form id="property-inspector">
+      <div type="select" class="udpi-item">
+        <div class="udpi-item-label" data-localize>Display</div>
+        <select class="udpi-item-value select" id="Display" name="Display">
+          <option value="month" data-localize selected>Income this month</option>
+          <option value="today" data-localize>Income today</option>
+          <option value="balance" data-localize>Available balance</option>
+          <option value="subs" data-localize>Active subscriptions</option>
+        </select>
+      </div>
+
+      <div class="udpi-item" id="source_note">
+        <div class="udpi-item-label" data-localize>Source</div>
+        <div class="udpi-item-value">Stripe API &mdash; needs a read-only key. Add it with:<br><code>tools/setup-keys.sh stripe</code></div>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="../inspector.js"></script>
+</body>
+</html>

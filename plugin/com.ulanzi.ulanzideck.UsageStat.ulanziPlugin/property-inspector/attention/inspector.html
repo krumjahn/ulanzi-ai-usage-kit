@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>AI attention</title>
+  <link rel="stylesheet" href="../inspector.css">
+</head>
+
+<body>
+
+  <div class="udpi-wrapper hidden">
+    <form id="property-inspector">
+      <div type="select" class="udpi-item">
+        <div class="udpi-item-label" data-localize>Period</div>
+        <select class="udpi-item-value select" id="Period" name="Period">
+          <option value="today" data-localize selected>Today</option>
+          <option value="week" data-localize>This week</option>
+          <option value="month" data-localize>This month</option>
+          <option value="30d" data-localize>Last 30 days</option>
+          <option value="all" data-localize>All time</option>
+        </select>
+      </div>
+
+      <div type="select" class="udpi-item">
+        <div class="udpi-item-label" data-localize>Tool</div>
+        <select class="udpi-item-value select" id="Tool" name="Tool">
+          <option value="" data-localize selected>All AI tools</option>
+          <option value="Grok Bot" data-localize>Grok Bot</option>
+          <option value="Grok" data-localize>Grok</option>
+          <option value="ChatGPT" data-localize>ChatGPT</option>
+          <option value="Codex" data-localize>Codex</option>
+          <option value="Claude" data-localize>Claude</option>
+          <option value="Cursor" data-localize>Cursor</option>
+          <option value="Gemini" data-localize>Gemini</option>
+          <option value="Unknown" data-localize>Unknown</option>
+        </select>
+      </div>
+
+      <div class="udpi-item" id="source_note">
+        <div class="udpi-item-label" data-localize>Source</div>
+        <div class="udpi-item-value">AI Usage (AttentionLedger) &mdash; foreground time attributed to AI tools</div>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="../inspector.js"></script>
+</body>
+</html>

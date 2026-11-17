@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Skool community</title>
+  <link rel="stylesheet" href="../inspector.css">
+</head>
+
+<body>
+
+  <div class="udpi-wrapper hidden">
+    <form id="property-inspector">
+      <div type="select" class="udpi-item">
+        <div class="udpi-item-label" data-localize>Display</div>
+        <select class="udpi-item-value select" id="Display" name="Display">
+          <option value="members" data-localize selected>Total members</option>
+          <option value="online" data-localize>Online now</option>
+        </select>
+      </div>
+
+      <div class="udpi-item">
+        <div class="udpi-item-label" data-localize>Community</div>
+        <input type="text" class="udpi-item-value" id="Community" name="Community" value=""
+          placeholder="my-community-1234">
+      </div>
+
+      <div class="udpi-item">
+        <div class="udpi-item-label" data-localize>Label</div>
+        <input type="text" class="udpi-item-value" id="Label" name="Label" placeholder="Skool">
+      </div>
+
+      <div class="udpi-item" id="source_note">
+        <div class="udpi-item-label" data-localize>Source</div>
+        <div class="udpi-item-value">Public Skool page &mdash; no key needed. Type your community slug, which is the last part of your Skool page address.</div>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="../inspector.js"></script>
+</body>
+</html>

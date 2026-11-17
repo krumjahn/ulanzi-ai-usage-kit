@@ -1,0 +1,129 @@
+{
+  "Controllers": [
+    {
+      "Actions": {},
+      "Type": "Encoder"
+    },
+    {
+      "Actions": {
+        "0_0": {
+          "Action": "com.ulanzi.ulanzideck.UsageStat.claude",
+          "ActionID": "63e65919-d596-5afa-a2fe-0a50d8c03be0",
+          "ActionParam": {},
+          "LinkedTitle": true,
+          "Name": "Claude Usage",
+          "Plugin": {
+            "Name": "AI Usage",
+            "UUID": "com.ulanzi.ulanzideck.UsageStat",
+            "Version": "1.4.1"
+          },
+          "ViewParam": [
+            {
+              "Icon": "/Users/USERNAME/Library/Application Support/Ulanzi/UlanziDeck/Plugins/com.ulanzi.ulanzideck.UsageStat.ulanziPlugin/assets/icons/claude.png",
+              "IconRel": "",
+              "Name": "claude"
+            }
+          ]
+        },
+        "0_1": {
+          "Action": "com.ulanzi.ulanzideck.UsageStat.openai",
+          "ActionID": "2fbbeb52-b660-5818-8892-d116f1d68146",
+          "ActionParam": {},
+          "LinkedTitle": true,
+          "Name": "Codex Usage",
+          "Plugin": {
+            "Name": "AI Usage",
+            "UUID": "com.ulanzi.ulanzideck.UsageStat",
+            "Version": "1.4.1"
+          },
+          "ViewParam": [
+            {
+              "Icon": "/Users/USERNAME/Library/Application Support/Ulanzi/UlanziDeck/Plugins/com.ulanzi.ulanzideck.UsageStat.ulanziPlugin/assets/icons/openai.png",
+              "IconRel": "",
+              "Name": "openai"
+            }
+          ]
+        },
+        "0_2": {
+          "Action": "com.ulanzi.ulanzideck.UsageStat.cursor",
+          "ActionID": "c5cf8fb3-80da-56b7-b605-da0236b9c813",
+          "ActionParam": {},
+          "LinkedTitle": true,
+          "Name": "Cursor Usage",
+          "Plugin": {
+            "Name": "AI Usage",
+            "UUID": "com.ulanzi.ulanzideck.UsageStat",
+            "Version": "1.4.1"
+          },
+          "ViewParam": [
+            {
+              "Icon": "/Users/USERNAME/Library/Application Support/Ulanzi/UlanziDeck/Plugins/com.ulanzi.ulanzideck.UsageStat.ulanziPlugin/assets/icons/cursor.png",
+              "IconRel": "",
+              "Name": "cursor"
+            }
+          ]
+        },
+        "1_0": {
+          "Action": "com.ulanzi.ulanzideck.UsageStat.grokbot",
+          "ActionID": "fb11c54b-fde9-5f65-b5f3-7bba22d8dcd2",
+          "ActionParam": {},
+          "LinkedTitle": true,
+          "Name": "GrokBot Usage",
+          "Plugin": {
+            "Name": "AI Usage",
+            "UUID": "com.ulanzi.ulanzideck.UsageStat",
+            "Version": "1.4.1"
+          },
+          "ViewParam": [
+            {
+              "Icon": "/Users/USERNAME/Library/Application Support/Ulanzi/UlanziDeck/Plugins/com.ulanzi.ulanzideck.UsageStat.ulanziPlugin/assets/icons/grokbot.png",
+              "IconRel": "",
+              "Name": "grokbot"
+            }
+          ]
+        },
+        "1_1": {
+          "Action": "com.ulanzi.ulanzideck.UsageStat.disk",
+          "ActionID": "37261df8-6138-5397-9496-4d2100473b2f",
+          "ActionParam": {},
+          "LinkedTitle": true,
+          "Name": "Disk Space",
+          "Plugin": {
+            "Name": "AI Usage",
+            "UUID": "com.ulanzi.ulanzideck.UsageStat",
+            "Version": "1.4.1"
+          },
+          "ViewParam": [
+            {
+              "Icon": "/Users/USERNAME/Library/Application Support/Ulanzi/UlanziDeck/Plugins/com.ulanzi.ulanzideck.UsageStat.ulanziPlugin/assets/icons/disk.png",
+              "IconRel": "",
+              "Name": "disk"
+            }
+          ]
+        },
+        "1_2": {
+          "Action": "com.ulanzi.ulanzideck.UsageStat.attention",
+          "ActionID": "241bd345-c6a6-53b4-b0df-03b1b136fa43",
+          "ActionParam": {},
+          "LinkedTitle": true,
+          "Name": "AI Attention",
+          "Plugin": {
+            "Name": "AI Usage",
+            "UUID": "com.ulanzi.ulanzideck.UsageStat",
+            "Version": "1.4.1"
+          },
+          "ViewParam": [
+            {
+              "Icon": "/Users/USERNAME/Library/Application Support/Ulanzi/UlanziDeck/Plugins/com.ulanzi.ulanzideck.UsageStat.ulanziPlugin/assets/icons/attention.png",
+              "IconRel": "",
+              "Name": "attention"
+            }
+          ]
+        }
+      },
+      "Type": "Keypad"
+    }
+  ],
+  "Icon": "",
+  "Name": "AI Usage"
+}

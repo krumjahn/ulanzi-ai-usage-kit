@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Grok Bot IT agent</title>
+  <link rel="stylesheet" href="../inspector.css">
+</head>
+
+<body>
+
+  <div class="udpi-wrapper hidden">
+    <form id="property-inspector">
+      <div type="select" class="udpi-item">
+        <div class="udpi-item-label" data-localize>Show on the button</div>
+        <select class="udpi-item-value select" id="Display" name="Display">
+          <option value="agent" data-localize selected>Agent name (IT)</option>
+          <option value="raptors_record" data-localize>Raptors win-loss</option>
+          <option value="raptors_standing" data-localize>Raptors league position</option>
+          <option value="raptors_behind" data-localize>Raptors games behind</option>
+        </select>
+      </div>
+
+      <div class="udpi-item">
+        <div class="udpi-item-label" data-localize>Message</div>
+        <input type="text" class="udpi-item-value" id="Prompt" name="Prompt"
+          value="Clear some space on my laptop" placeholder="Clear some space on my laptop">
+      </div>
+
+      <div class="udpi-item">
+        <div class="udpi-item-label" data-localize>Agent id</div>
+        <input type="text" class="udpi-item-value" id="AgentId" name="AgentId"
+          value="" placeholder="agent uuid">
+      </div>
+
+      <div type="select" class="udpi-item">
+        <div class="udpi-item-label" data-localize>Send automatically</div>
+        <select class="udpi-item-value select" id="Send" name="Send">
+          <option value="no" data-localize selected>No - leave it as a draft</option>
+          <option value="yes" data-localize>Yes - press Enter too</option>
+        </select>
+      </div>
+
+      <div class="udpi-item" id="source_note">
+        <div class="udpi-item-label" data-localize>Source</div>
+        <div class="udpi-item-value">Opens Grok Bot, selects your configured agent and types the message. "Send automatically" needs the host process to have Accessibility permission. What the button <i>shows</i> is set above &mdash; pressing it still opens Grok Bot.</div>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="../inspector.js"></script>
+</body>
+</html>

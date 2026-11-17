@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>GrokBot usage</title>
+  <link rel="stylesheet" href="../inspector.css">
+</head>
+
+<body>
+
+  <div class="udpi-wrapper hidden">
+    <form id="property-inspector">
+      <div type="select" class="udpi-item">
+        <div class="udpi-item-label" data-localize>Display</div>
+        <select class="udpi-item-value select displaySelector" id="Display" name="Display">
+          <option value="remaining" data-localize>Remaining %</option>
+          <option value="used" data-localize>Used %</option>
+          <option value="tokens" data-localize>Tokens today</option>
+          <option value="reset" data-localize>Resets in</option>
+        </select>
+      </div>
+
+      <div class="udpi-item" id="source_note">
+        <div class="udpi-item-label" data-localize>Source</div>
+        <div class="udpi-item-value">Grok Bot usage, read from OpenUsage.</div>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="../inspector.js"></script>
+</body>
+</html>

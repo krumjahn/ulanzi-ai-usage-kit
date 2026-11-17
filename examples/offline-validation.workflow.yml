@@ -1,0 +1,20 @@
+name: Offline validation
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Check runtime
+        run: node -e 'if (Number(process.versions.node.split(".")[0]) < 18) process.exit(1)'
+      - name: Validate every release file
+        run: python3 tools/validate.py
+      - name: Exercise installer rollback and credential setup in temporary homes
+        run: python3 -m unittest discover -s tests -v
+      - name: Test data sources and inspector without external calls
+        run: node tests/offline.test.js

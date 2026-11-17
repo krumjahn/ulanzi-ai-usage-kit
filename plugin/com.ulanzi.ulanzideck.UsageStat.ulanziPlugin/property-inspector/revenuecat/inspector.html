@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>RevenueCat subscribers</title>
+  <link rel="stylesheet" href="../inspector.css">
+</head>
+
+<body>
+
+  <div class="udpi-wrapper hidden">
+    <form id="property-inspector">
+      <div type="select" class="udpi-item">
+        <div class="udpi-item-label" data-localize>Display</div>
+        <select class="udpi-item-value select" id="Display" name="Display">
+          <option value="actives" data-localize selected>Active subscribers</option>
+          <option value="mrr" data-localize>MRR</option>
+          <option value="revenue" data-localize>Revenue this month</option>
+        </select>
+      </div>
+
+      <div class="udpi-item" id="source_note">
+        <div class="udpi-item-label" data-localize>Source</div>
+        <div class="udpi-item-value">RevenueCat API &mdash; needs a secret key and project id. Add them with:<br><code>tools/setup-keys.sh revenuecat</code></div>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="../inspector.js"></script>
+</body>
+</html>

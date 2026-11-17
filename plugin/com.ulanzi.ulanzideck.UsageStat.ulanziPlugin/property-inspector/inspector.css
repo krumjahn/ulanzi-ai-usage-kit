@@ -1,0 +1,10 @@
+/* Original minimal inspector styles. */
+:root { color-scheme: dark; font: 13px system-ui, sans-serif; }
+body { margin: 16px; background: #202124; color: #eceff4; }
+.hidden { display: none; }
+.udpi-item { margin-block: 14px; }
+.udpi-item-label { font-weight: 600; margin-bottom: 6px; }
+.udpi-item-value { line-height: 1.5; overflow-wrap: anywhere; }
+input, select, textarea { box-sizing: border-box; width: 100%; padding: 8px; border: 1px solid #657080; border-radius: 5px; background: #30343b; color: inherit; }
+code { font-size: 11px; }
+a { color: #8bc6ff; }

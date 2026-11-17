@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Social followers</title>
+  <link rel="stylesheet" href="../inspector.css">
+</head>
+
+<body>
+
+  <div class="udpi-wrapper hidden">
+    <form id="property-inspector">
+      <div type="select" class="udpi-item">
+        <div class="udpi-item-label" data-localize>Display</div>
+        <select class="udpi-item-value select" id="Display" name="Display">
+          <option value="followers" data-localize selected>Follower count</option>
+          <option value="username" data-localize>Account name</option>
+        </select>
+      </div>
+
+      <div type="select" class="udpi-item">
+        <div class="udpi-item-label" data-localize>Platform</div>
+        <select class="udpi-item-value select" id="Platform" name="Platform">
+          <option value="threads" data-localize selected>Threads</option>
+          <option value="instagram" data-localize>Instagram</option>
+        </select>
+      </div>
+
+      <div class="udpi-item">
+        <div class="udpi-item-label" data-localize>Handle</div>
+        <input class="udpi-item-value" id="Handle" name="Handle" type="text" placeholder="your-handle" autocomplete="off" spellcheck="false">
+      </div>
+
+      <div class="udpi-item" id="source_note">
+        <div class="udpi-item-label" data-localize>Source</div>
+        <div class="udpi-item-value">Tries a public profile using an installed Chromium browser; scraping may fail. If you have a Meta access token it is used instead:<br><code>tools/setup-keys.sh social</code></div>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="../inspector.js"></script>
+</body>
+</html>

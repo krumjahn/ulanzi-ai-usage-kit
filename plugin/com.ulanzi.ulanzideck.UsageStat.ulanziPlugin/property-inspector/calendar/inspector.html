@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Next meeting</title>
+  <link rel="stylesheet" href="../inspector.css">
+</head>
+
+<body>
+
+  <div class="udpi-wrapper hidden">
+    <form id="property-inspector">
+      <div type="select" class="udpi-item">
+        <div class="udpi-item-label" data-localize>Display</div>
+        <select class="udpi-item-value select" id="Display" name="Display">
+          <option value="name" data-localize selected>Event name</option>
+          <option value="until" data-localize>Time until next meeting</option>
+          <option value="time" data-localize>Clock time</option>
+        </select>
+      </div>
+
+      <div class="udpi-item">
+        <div class="udpi-item-label" data-localize>Opens on press</div>
+        <input class="udpi-item-value" id="Opens" name="Opens" type="text" placeholder="/Applications/ChatGPT.app/" autocomplete="off" spellcheck="false">
+      </div>
+
+      <div class="udpi-item" id="source_note">
+        <div class="udpi-item-label" data-localize>Source</div>
+        <div class="udpi-item-value">Requires the optional Calendar helper and macOS Calendar permission. The button still opens the app above when pressed.</div>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="../inspector.js"></script>
+</body>
+</html>

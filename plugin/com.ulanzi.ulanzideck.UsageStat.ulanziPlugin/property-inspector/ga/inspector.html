@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Google Analytics</title>
+  <link rel="stylesheet" href="../inspector.css">
+</head>
+
+<body>
+
+  <div class="udpi-wrapper hidden">
+    <form id="property-inspector">
+      <div type="select" class="udpi-item">
+        <div class="udpi-item-label" data-localize>Display</div>
+        <select class="udpi-item-value select" id="Display" name="Display">
+          <option value="users" data-localize selected>Active users</option>
+          <option value="sessions" data-localize>Sessions</option>
+          <option value="views" data-localize>Page views</option>
+          <option value="revenue" data-localize>Revenue</option>
+        </select>
+      </div>
+      <div type="select" class="udpi-item">
+        <div class="udpi-item-label" data-localize>Period</div>
+        <select class="udpi-item-value select" id="Period" name="Period">
+          <option value="today" data-localize selected>Today</option>
+          <option value="yesterday" data-localize>Yesterday</option>
+          <option value="week" data-localize>Last 7 days</option>
+          <option value="month" data-localize>Last 30 days</option>
+        </select>
+      </div>
+
+      <div class="udpi-item" id="source_note">
+        <div class="udpi-item-label" data-localize>Source</div>
+        <div class="udpi-item-value">GA4 &mdash; needs a property id and a service account. Add them with:<br><code>tools/setup-keys.sh ga</code></div>
+      </div>
+    </form>
+  </div>
+
+
+  <script src="../inspector.js"></script>
+</body>
+</html>
