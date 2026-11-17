@@ -40,3 +40,9 @@ owners; publication does not imply endorsement or grant rights to those marks.
 The original Library uploads are preserved. Published images are checked for
 private metadata, and their reviewed bytes are recorded in
 `tests/documentation-images.json`.
+
+The two `*-redacted.png` documentation photos were edited with the built-in
+image tool to cover calendar text and private monitor content. They are resized
+AI-assisted edits, not pixel-identical originals. The Studio screenshot remains
+byte-identical to the user-supplied screenshot. Generated edit provenance is
+retained; no EXIF/location metadata or unredacted photo originals are bundled.

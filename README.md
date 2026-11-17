@@ -19,6 +19,23 @@ This screenshot includes optional integrations and separate YouTube/system-stat
 buttons that are not bundled with this kit. The public starter profile is smaller;
 see the dependencies below before adding more actions.
 
+![Close-up of Keith's Ulanzi D200 displaying AI quotas and optional metrics, with the calendar key covered for privacy](docs/images/ulanzi-d200-closeup-redacted.png)
+
+The physical D200 below the monitor. The calendar key is covered to hide the
+meeting name and time.
+
+![Keith's desk with the Ulanzi D200, keyboard and microphone; monitor content and the calendar key are covered for privacy](docs/images/ulanzi-desk-setup-redacted.png)
+
+The wider desk setup. The monitor display is covered to hide private chat,
+project titles and desktop files; the D200 calendar key is also covered.
+
+**Photo redactions:** The two photos are AI-assisted privacy edits of Keith's
+supplied images, resized to 1448 × 1086. Opaque covers replace private content;
+minor rendering differences outside those areas are possible. They illustrate
+his setup, not a compatibility test of this public release. The unredacted photo
+originals are not included. No private EXIF/location metadata is included;
+AI-edit provenance metadata is retained.
+
 ## What is included
 
 - A JavaScript plugin with editable source in `plugin/.../dist/` (no build step).
